@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "Inter";
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: hsl(0, 0%, 8%);
+}
+
+.box {
+    background: hsl(0, 0%, 12%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: clamp(18rem, 90vw, 24rem);
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    border-radius: 0.5rem;
+}
+
+.image {
+    height: clamp(4.5rem, 5.614vw, 6rem);
+    width: clamp(4.5rem, 5.614vw, 6rem);
+    border-radius: 50%;
+}
+
+.name {
+    color: white;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.location {
+    margin-top: 0.5rem;
+    color: hsl(75, 94%, 57%);
+}
+
+.desc {
+    margin-top: 1.5rem;
+    color: white;
+    font-weight: 400px;
+}
+
+.social-links {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 1rem;
+    width: 100%;
+}
+
+.link {
+    background: hsl(0, 0%, 20%);
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    padding: 0.7em 0;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover {
+    color: hsl(0, 0%, 8%);
+    background: hsl(75, 94%, 57%);
+}
